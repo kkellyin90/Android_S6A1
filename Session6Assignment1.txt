@@ -1,0 +1,28 @@
+1. What is menu. Write its importance?
+A: Menus are the additional options displayed on clicking the menu button of a mobile.
+   It displays options that are not directly visible on the main UI of an application; thus saving space of an activity.
+   Importance of menu are:
+	* It saves space on the activity layout.
+	* Creates a floating view that overlaps the activity.
+	* Allows a user to navigate from one activity to another.
+	* Allows the user to perform an action using buttons that are otherwise not visible on the UI.
+	* Creates a stylized view of options/items that a user can use for performing an action/event.
+
+2. What is options menu. When it is activated?
+A: The options menu is the primary collection of menu items for an activity. 
+   The options menu is where one should include actions and other options that are relevant to the current activity context, 
+   such as "Search," "Compose email," and "Settings."
+   It is activated by clicking on the "Menu Key".
+
+3. What is context menu. When it is activated?
+A: It is a type of Menu that is displayed when the user taps and hold on any view or control.
+   It is usually used with listview and gridview items and can perform additional operations or actions.
+   It is activated by tap and hold on a control or view.
+
+4. What is the alternative of ActionBarActivity as its deprecated?
+A: An alternative to ActionBarActivity is AppCompatActivity. 
+   The deprecation of ActionBarActivity is a hint for one to use the new AppCompatActivity directly.
+   AppCompatActivity is a new, more generic implementation which uses AppCompatDelegate class internally.
+   To make it work you must create an instance of AppCompatDelegate inside your activity, override methods of that activity like addContentView(), 
+   setContentView() etc and inside those overridden methods forward the calls to inner AppCompatDelegate instance. 
+   AppCompatDelegate will do the rest and your “old-fashion” activity will be “materialized”.
